@@ -1,8 +1,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Superterran\Blog\Block\Post" name="post" template="post.phtml">
-            </block>
+            <block class="Superterran\Blog\Block\Post" name="post" template="post.phtml"></block>
         </referenceContainer>
     </body>
 </page>
