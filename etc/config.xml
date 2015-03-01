@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Core/etc/config.xsd">
+    <default>
+        <superterran_blog>
+            <options>
+                <active>1</active>
+                <!--<guest_checkout>1</guest_checkout>-->
+            </options>
+            <!--<cart>-->
+                <!--<delete_quote_after>30</delete_quote_after>-->
+                <!--<redirect_to_cart>0</redirect_to_cart>-->
+            <!--</cart>-->
+            <!--<cart_link>-->
+                <!--<use_qty>1</use_qty>-->
+            <!--</cart_link>-->
+            <!--<sidebar>-->
+                <!--<display>1</display>-->
+                <!--<count>3</count>-->
+            <!--</sidebar>-->
+            <!--<payment_failed>-->
+                <!--<identity>general</identity>-->
+                <!--<receiver>general</receiver>-->
+                <!--<template>checkout_payment_failed_template</template>-->
+            <!--</payment_failed>-->
+        </superterran_blog>
+    </default>
+</config>
