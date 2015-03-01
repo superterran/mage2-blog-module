@@ -1,4 +1,5 @@
 <post>
-    <posttitle>This is my title</posttitle>
-    <postbody>This is my body.</postbody>
+    <posttitle><?php echo $this->getPost()->getTitle() ?></posttitle>
+    <postbody><?php echo $this->getPost()->getContent() ?></postbody>
 </post>
+

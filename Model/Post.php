@@ -24,9 +24,9 @@ class Post extends \Magento\Framework\Model\AbstractModel implements IdentityInt
     /**
      * CMS block cache tag
      */
-    const CACHE_TAG = 'blog_post';
+    const CACHE_TAG = 'cms_block';
 
-    const ID = 'post_id';
+    const ID = 'block_id';
     const IDENTIFIER = 'identifier';
     const TITLE = 'title';
     const CONTENT = 'content';
@@ -51,7 +51,7 @@ class Post extends \Magento\Framework\Model\AbstractModel implements IdentityInt
      */
     protected function _construct()
     {
-//        $this->_init('Superterran\Blog\Model\Resource\Blog');
+        $this->_init('Magento\Cms\Model\Resource\Block');
     }
 
     /**
@@ -62,12 +62,12 @@ class Post extends \Magento\Framework\Model\AbstractModel implements IdentityInt
      */
     public function beforeSave()
     {
-        $needle = 'post_id="' . $this->getId() . '"';
+        $needle = 'block_id="' . $this->getId() . '"';
         if (false == strstr($this->getContent(), $needle)) {
             return parent::beforeSave();
         }
         throw new \Magento\Framework\Exception\LocalizedException(
-            __('Make sure that Blog Post content does not reference the post itself.')
+            __('Make sure that static block content does not reference the block itself.')
         );
     }
 
